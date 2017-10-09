@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="120dp"
+    android:background="@drawable/loading_corner"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.tool.utils.dialog.CustomTimingCircle
+        android:id="@+id/dialog_tv_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dip" />
+
+    <TextView
+        android:id="@+id/dialog_tv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="5\n秒"
+        android:textColor="@color/gold"
+        android:textSize="22sp" />
+</RelativeLayout>

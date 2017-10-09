@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frenchGrey"
+    android:orientation="vertical" >
+
+    <!--<TextView-->
+        <!--android:id="@+id/activity_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@color/darkcyan"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/pay"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="28sp" />-->
+    <include
+        android:id="@+id/titlelayout"
+        layout="@layout/layout_header_with_back" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/relay_bg"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/pay_data"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </TextView>
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/pay_order_id"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/id_orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="20101111111111111111111"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout> -->
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/pay_amount_total"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/id_orderAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="1245678.89"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/pay_amount"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/id_payAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="1245678.89"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/id_ll_pointAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/pay_point_amount"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/id_pointAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="201011111111111111111"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_ll_coupon_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/pay_coupons_amount"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/id_coupon_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="20101111111111111111"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/relay_bg"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/pay_type"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/pay_flot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.01"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/pay_bg"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <Button
+
+                    android:layout_width="@dimen/pay_icon_width"
+                    android:layout_height="@dimen/pay_icon_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:clickable="false"
+                    android:background="@drawable/pay_flot_bg" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/pay_flot"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_wx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/pay_bg"
+                android:orientation="vertical" >
+
+                <Button
+                    android:clickable="false"
+                    android:layout_width="@dimen/pay_icon_width"
+                    android:layout_height="@dimen/pay_icon_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+
+                    android:background="@drawable/pay_weixin_bg" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/pay_wx"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_aly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/pay_bg"
+                android:orientation="vertical" >
+
+                <Button
+                    android:clickable="false"
+                    android:layout_width="@dimen/pay_icon_width"
+                    android:layout_height="@dimen/pay_icon_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/pay_aly_bg" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/pay_aly"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_cash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/pay_bg"
+                android:focusable="true"
+                android:orientation="vertical" >
+
+                <Button
+                    android:clickable="false"
+                    android:layout_width="@dimen/pay_icon_width"
+                    android:layout_height="@dimen/pay_icon_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+
+                    android:background="@drawable/pay_cash_bg" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/pay_cash"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+
+
+            <LinearLayout
+                android:id="@+id/pay_qb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/pay_bg"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:clickable="false"
+                    android:layout_width="@dimen/pay_icon_width"
+                    android:layout_height="@dimen/pay_icon_height"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/icon_qb" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/pay_qb"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_pay_stk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/pay_bg"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:background="@drawable/pay_flot_bg" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/black"
+                    android:text="会员卡"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/pay_bg"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/icon_aly" >
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/relay_bg"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/dysj_upload_success" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/pay_end_des"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/id_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_purple_selector"
+            android:text="@string/print_again"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id_finish"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_purple_selector"
+            
+            android:text="@string/pay_end"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_query"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/relay_bg"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="gone" >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="@string/pay_query"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+
+        <Button
+            android:id="@+id/id_query"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_purple_selector"
+
+            android:text="@string/pay_order_query"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id_terminal_query_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_purple_selector"
+
+            android:text="@string/pay_end"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_pay_amount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/relay_bg"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:visibility="gone" >
+
+        
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/pay_des"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        
+
+        <Button
+            android:id="@+id/id_no_pay_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_purple_selector"
+            
+            android:text="@string/sure"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

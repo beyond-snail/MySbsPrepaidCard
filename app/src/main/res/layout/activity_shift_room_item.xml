@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/relay_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷卡: "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/id_total_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_show" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_trade_num_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易笔数: "
+            android:textSize="@dimen/font_show" />
+
+        <TextView
+            android:id="@+id/id_trade_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_show" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_real_pay_money_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实收金额: "
+            android:textSize="@dimen/font_show" />
+
+        <TextView
+            android:id="@+id/id_show_real_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_ll_undo_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_undo_money_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易撤销总金额: "
+            android:textSize="@dimen/font_show" />
+
+        <TextView
+            android:id="@+id/id_undo_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_ll_show_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_show_coupon_deduct_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券抵扣金额: "
+            android:textSize="@dimen/font_show" />
+
+        <TextView
+            android:id="@+id/id_show_coupon_deduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_ll_show_intergral_deduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_show_intergral_deduct_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分抵扣金额: "
+            android:textSize="@dimen/font_show" />
+
+        <TextView
+            android:id="@+id/id_show_intergral_deduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_show" />
+
+    </LinearLayout>
+
+</LinearLayout>

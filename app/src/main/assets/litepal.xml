@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="zfLitePal_db" >
+    </dbname>
+
+    <version value="39" >
+    </version>
+
+    <list>
+        <mapping class = "com.mysbsprepaidcard.zfsbs.model.SbsPrinterData"></mapping>
+        <mapping class = "com.mysbsprepaidcard.zfsbs.model.TransUploadRequest"></mapping>
+        <mapping class = "com.mysbsprepaidcard.zfsbs.model.LoginApiResponse"></mapping>
+        <mapping class = "com.mysbsprepaidcard.zfsbs.model.ShiftRoomSave"></mapping>
+    </list>
+
+</litepal>

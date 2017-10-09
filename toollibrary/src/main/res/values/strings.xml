@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyLibs</string>
+    <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
+    <string name="memberNo">请输入手机号或会员卡号</string>
+    <string name="input_member_no">输入会员号</string>
+    <string name="pay_password_txt">请输入交易密码</string>
+
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+    <string name="key_00">00</string>
+    <string name="key_point">.</string>
+    <string name="key_caculate">收\n款</string>
+    <string name="pay">收款</string>
+
+    <string name="input_amount">输入金额</string>
+    <string name="please_input_amount">请输入金额</string>
+
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">OK</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+</resources>

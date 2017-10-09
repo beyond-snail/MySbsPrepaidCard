@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+
+    <dimen name="btn_recordInfo_h">35dp</dimen>
+    <dimen name="pay_icon_width">50dp</dimen>
+    <dimen name="pay_icon_height">50dp</dimen>
+    <dimen name="btn_sm_w">50dp</dimen>
+    <dimen name="btn_sm_h">50dp</dimen>
+    <dimen name="btn_sm_enter">170dp</dimen>
+    <dimen name="icon_pay_w">50dp</dimen>
+    <dimen name="icon_pay_h">50dp</dimen>
+    <dimen name="icon_magin">20dp</dimen>
+    <dimen name="record_info_font_size">15sp</dimen>
+    <dimen name="font_show">15dp</dimen>
+
+    <dimen name="content2border_padding">8dp</dimen>
+    <dimen name="content2border_margin">8dp</dimen>
+
+    <dimen name="listitem_text_height">42dp</dimen>
+    <dimen name="text_height_width">30dp</dimen>
+    <dimen name="edittext_height">48dp</dimen>
+    <dimen name="line_height_width">0.5dp</dimen>
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="imageview_height_width">60dp</dimen>
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
