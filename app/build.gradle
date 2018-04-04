@@ -1,13 +1,34 @@
 apply plugin: 'com.android.application'
 
 android {
+
+
+//    signingConfigs {
+//        release {
+//            keyAlias 'androiddebugkey'
+//            keyPassword 'android'
+//            storePassword 'android'
+//            storeFile file('/Users/wucongpeng/Documents/work_space/gogo/JFK.jks')
+//        }
+//    }
+
+    signingConfigs {
+        release {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+            storeFile file('G:/work_project/sbs/JFK.jks')
+        }
+    }
+
+
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.mysbsprepaidcard"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 1
+        versionCode 102
         versionName "1.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -15,6 +36,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            debuggable true
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            signingConfig signingConfigs.release
         }
     }
 }
